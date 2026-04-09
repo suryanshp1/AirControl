@@ -1,0 +1,14 @@
+version: "3.9"
+
+services:
+  backend:
+    build: .
+    ports:
+      - "8000:8000"
+    volumes:
+      - .:/app
+    environment:
+      - PYTHONUNBUFFERED=1
+    # Adding device mapping for generic Linux webcam usage (macOS won't work out of the box)
+    devices:
+      - "/dev/video0:/dev/video0"

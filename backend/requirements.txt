@@ -1,0 +1,10 @@
+fastapi>=0.112.0
+uvicorn>=0.30.0
+opencv-python>=4.10.0
+mediapipe==0.10.33
+pydantic>=2.9.0
+numpy>=1.26.4
+pynput>=1.7.6
+websockets>=13.0
+torch>=2.2.0
+scikit-learn>=1.4.0
